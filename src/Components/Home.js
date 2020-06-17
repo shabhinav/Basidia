@@ -13,8 +13,6 @@ class Home extends Component{
     }
 
     checkdata=(data)=>{
-        ('data',data)
-        ('inpval',this.searchInput.current.value)
         if(data.state.toUpperCase()===this.searchInput.current.value.toUpperCase()){
             return data
         }
@@ -42,7 +40,6 @@ class Home extends Component{
             statewisedetail:data.data.stateWiseData,
             searchedResult:data.data.stateWiseData
         })
-        (data)
     }
 
     render() {
