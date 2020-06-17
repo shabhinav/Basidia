@@ -15,14 +15,14 @@ class Home extends Component{
     checkdata=(data)=>{
         ('data',data)
         ('inpval',this.searchInput.current.value)
-        if(data.state.toUpperCase()==this.searchInput.current.value.toUpperCase()){
+        if(data.state.toUpperCase()===this.searchInput.current.value.toUpperCase()){
             return data
         }
     }
 
     searchedDataHandler=(e)=>{
         e.preventDefault()
-        if(this.searchInput.current.value.length==0){
+        if(this.searchInput.current.value.length===0){
             this.setState({
                 searchedResult:this.state.statewisedetail,
                 

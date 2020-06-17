@@ -30,6 +30,7 @@ class SignUp extends Component{
                          Password:this.Password.current.value,
                         }]
                      })
+                     console.log(data)
                       this.setState({
                          incorrectData:'Incorrect Password'
                      })
@@ -46,10 +47,6 @@ class SignUp extends Component{
     }
 
     render() {
-        let incorrectData
-        if(this.state.incorrectData){
-            incorrectData='Password doesnot match'
-        }
         let confirmsubmit
         if(!this.state.submitData){
             confirmsubmit='Agree all terms and condotions'

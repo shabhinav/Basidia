@@ -20,9 +20,8 @@ class SignIn extends Component{
 
     SignIn=async()=>{
         let data=await axios.get(`https://sheetdb.io/api/v1/oepfdihx9lope/search?Name=${this.Name.current.value}&Password=${this.Password.current.value}`)
-        (data)
 
-        if(data.data.length==0){
+        if(data.data.length===0){
             this.setState({
                 userdata:'User Don\'t Exist'
             })
