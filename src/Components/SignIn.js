@@ -55,10 +55,10 @@ class SignIn extends Component{
                             <div className='termsconditonsection'><input type='checkbox' className='checkbox'/><p className='termsconditions'>Remember me</p></div>
                         </div>
                         <div className='container registerbtnsec'>
-                            <button className='btn btn-primary linbtnstyling' onClick={this.SignIn}>Lin</button>
+                            <button className='btn btn-primary linbtnstyling' onClick={this.SignIn}>Login</button>
                         </div>
                         <div className='linoption'>
-                            <p className='linchoice'>or Lin with</p>
+                            <p className='linchoice'>or Login with</p>
                             <span>
                                 <img src={Facebook} alt='' className='linicons'/>
                                 <img src={Twitter} alt='' className='linicons'/>
