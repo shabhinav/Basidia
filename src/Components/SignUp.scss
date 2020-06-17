@@ -1,0 +1,80 @@
+%inputboxstyling{
+    padding-left: 30px;
+    background-repeat: no-repeat;
+    outline:none
+}
+
+.SignUp{
+    margin:auto;
+    background-color:white;
+    width: 60vw;
+    height: 80vh;
+    border-radius: 10px;
+    .signupheading{
+        margin-top: 60px;
+        margin-bottom: 40px;
+        text-align: left;
+        margin-left: 10px;
+    }
+    a{
+        text-decoration: black underline;
+        color: black;
+        &:hover{
+            color: black;
+        }
+    }
+    
+
+    ::placeholder { 
+        font-size: 15px;
+      }
+
+    #people{
+        background-image: url(../Assets/person.svg);
+        @extend %inputboxstyling;
+    }
+
+    #email{
+        background-image: url(../Assets/email.svg);
+        @extend %inputboxstyling;
+    }
+
+    #filledlock{
+        background-image: url(../Assets/lock2.svg);
+        @extend %inputboxstyling;
+    }
+
+    #outlinelock{
+        background-image: url(../Assets/lock.svg);
+        @extend %inputboxstyling;
+    }
+    .inputtextbox{
+        border:none;
+        border-bottom: 1px solid black !important;
+        margin-bottom: 30px;
+        width: 85%;
+    }
+    .termsconditions{
+        display: inline-block;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .registerbtnsec{
+        text-align: left;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .registerbtnstyling{
+        font-size: 12px;
+        padding: 12px 35px;
+    }
+    .imgformating{
+        margin-top: 80px;
+        height: 300px;
+    }
+    .gotosigninlink{
+        margin-top: 80px;
+        font-size: 14px;
+    }
+}

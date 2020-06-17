@@ -1,0 +1,84 @@
+%inputboxstyling{
+    padding-left: 30px;
+    background-repeat: no-repeat;
+    outline: none;
+}
+
+.SignIn{
+    margin:auto;
+    background-color:white;
+    width: 60vw;
+    height: 80vh;
+    border-radius: 10px;
+    a{
+        text-decoration: black underline;
+        color: black;
+        font-size: 12px;
+        &:hover{
+            color: black;
+        }
+    }
+    .signinheading{
+        margin-top: 60px;
+        margin-bottom: 40px;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .gotosignuplink{
+        margin-top: 50px;
+    }
+    .imgformating{
+        margin-top: 60px;
+        height: 350px;
+    }
+    #people{
+        background-image: url(../Assets/person.svg);
+        @extend %inputboxstyling;
+    }
+    #filledlock{
+        background-image: url(../Assets/lock2.svg);
+        @extend %inputboxstyling;
+    }
+    .inputtextbox{
+        border:none;
+        border-bottom: 1px solid black !important;
+        margin-bottom: 30px;
+        width: 85%;
+    }
+    ::placeholder { 
+        font-size: 15px;
+    }
+    .termsconditions{
+        display: inline-block;
+        font-size: 14px;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .termsconditonsection{
+        text-align: left;
+        margin-left: 20px;
+    }
+    .loginbtnstyling{
+        font-size: 12px;
+        padding: 12px 35px;
+    }
+    .registerbtnsec{
+        text-align: left;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .loginoption{
+        text-align: left;
+        margin-left: 30px;
+        margin-top: 80px;
+        font-size: 12px;
+    }
+    .loginchoice{
+        display: inline-block;
+    }
+    .loginicons{
+        width: 30px;
+        margin-left: 5px;
+    }
+}
